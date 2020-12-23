@@ -3,5 +3,5 @@ import Amplify from 'aws-amplify'
 import '@aws-amplify/ui-vue'
 import awsExports from '@/src/aws-exports'
 
-Amplify.configure({ ...awsExports, ssr: true }); // AmplifyでSSR対応
+Amplify.configure(awsExports)
 Vue.use(Amplify)
