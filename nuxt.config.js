@@ -1,5 +1,5 @@
 export default {
-  ssr: false,
+  // ssr: false,
   // Global page headers (https://go.nuxtjs.dev/config-head)
   head: {
     title: 'amplifytest',
@@ -18,8 +18,7 @@ export default {
   ],
 
   // Plugins to run before rendering page (https://go.nuxtjs.dev/config-plugins)
-  plugins: [
-  ],
+  plugins: [{ src: '~/plugins/amplify.js', mode: 'client' }],
 
   // Auto import components (https://go.nuxtjs.dev/config-components)
   components: true,
