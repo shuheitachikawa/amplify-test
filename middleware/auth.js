@@ -11,7 +11,7 @@ export default async function ({ route, redirect }) {
       return ''
     })
   if (!user) {
-    if (route.path.split('/')[1] !== 'login') {
+    if (route.path.split('/')[1] !== 'login' || route.path.split('/')[1] !== 'tabelog') {
       return redirect('/login')
     }
   }
