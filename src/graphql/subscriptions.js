@@ -34,3 +34,39 @@ export const onDeleteTodo = /* GraphQL */ `
     }
   }
 `;
+export const onCreateRcUserGroupHotel = /* GraphQL */ `
+  subscription OnCreateRcUserGroupHotel {
+    onCreateRcUserGroupHotel {
+      id
+      hotelMasterId
+      name
+      createdAt
+      updatedAt
+      deletedAt
+    }
+  }
+`;
+export const onUpdateRcUserGroupHotel = /* GraphQL */ `
+  subscription OnUpdateRcUserGroupHotel {
+    onUpdateRcUserGroupHotel {
+      id
+      hotelMasterId
+      name
+      createdAt
+      updatedAt
+      deletedAt
+    }
+  }
+`;
+export const onDeleteRcUserGroupHotel = /* GraphQL */ `
+  subscription OnDeleteRcUserGroupHotel {
+    onDeleteRcUserGroupHotel {
+      id
+      hotelMasterId
+      name
+      createdAt
+      updatedAt
+      deletedAt
+    }
+  }
+`;

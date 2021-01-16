@@ -10,10 +10,11 @@
   },
   "dependencies": {
     "@aws-amplify/ui-vue": "^0.2.32",
+    "@nuxtjs/vuetify": "^1.11.2",
     "aws-amplify": "^3.3.10",
+    "axios": "^0.21.1",
     "core-js": "^3.6.5",
-    "nuxt": "^2.14.6",
-    "@nuxtjs/vuetify": "^1.11.2"
+    "nuxt": "^2.14.6"
   },
   "devDependencies": {}
 }

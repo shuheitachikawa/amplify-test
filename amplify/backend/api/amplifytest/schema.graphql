@@ -3,3 +3,14 @@ type Todo @model {
   name: String!
   description: String
 }
+
+type RcUserGroupHotel
+@model
+@key(name: "ByHotelMasterId", fields: ["hotelMasterId"], queryField: "RcUserGroupHotelByHotelMasterId") {
+  id: ID!
+  hotelMasterId: ID!
+  name: String @function(name: "getHotelNameByHotelMasterId-${env}")
+  createdAt: AWSDateTime!
+  updatedAt: AWSDateTime
+  deletedAt: AWSDateTime
+}

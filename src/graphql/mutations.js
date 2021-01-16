@@ -43,3 +43,48 @@ export const deleteTodo = /* GraphQL */ `
     }
   }
 `;
+export const createRcUserGroupHotel = /* GraphQL */ `
+  mutation CreateRcUserGroupHotel(
+    $input: CreateRcUserGroupHotelInput!
+    $condition: ModelRcUserGroupHotelConditionInput
+  ) {
+    createRcUserGroupHotel(input: $input, condition: $condition) {
+      id
+      hotelMasterId
+      name
+      createdAt
+      updatedAt
+      deletedAt
+    }
+  }
+`;
+export const updateRcUserGroupHotel = /* GraphQL */ `
+  mutation UpdateRcUserGroupHotel(
+    $input: UpdateRcUserGroupHotelInput!
+    $condition: ModelRcUserGroupHotelConditionInput
+  ) {
+    updateRcUserGroupHotel(input: $input, condition: $condition) {
+      id
+      hotelMasterId
+      name
+      createdAt
+      updatedAt
+      deletedAt
+    }
+  }
+`;
+export const deleteRcUserGroupHotel = /* GraphQL */ `
+  mutation DeleteRcUserGroupHotel(
+    $input: DeleteRcUserGroupHotelInput!
+    $condition: ModelRcUserGroupHotelConditionInput
+  ) {
+    deleteRcUserGroupHotel(input: $input, condition: $condition) {
+      id
+      hotelMasterId
+      name
+      createdAt
+      updatedAt
+      deletedAt
+    }
+  }
+`;

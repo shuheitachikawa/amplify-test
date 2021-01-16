@@ -1,6 +1,6 @@
 {
   "auth": {
-    "amplifytestecc2acb8": {
+    "amplifytestc0cf4026": {
       "service": "Cognito",
       "providerPlugin": "awscloudformation",
       "dependsOn": [],
@@ -16,12 +16,19 @@
           "defaultAuthentication": {
             "authenticationType": "AMAZON_COGNITO_USER_POOLS",
             "userPoolConfig": {
-              "userPoolId": "authamplifytestecc2acb8"
+              "userPoolId": "authamplifytestc0cf4026"
             }
           },
           "additionalAuthenticationProviders": []
         }
       }
+    }
+  },
+  "function": {
+    "getHotelNameByHotelMasterId": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
     }
   }
 }

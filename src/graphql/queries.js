@@ -30,3 +30,65 @@ export const listTodos = /* GraphQL */ `
     }
   }
 `;
+export const getRcUserGroupHotel = /* GraphQL */ `
+  query GetRcUserGroupHotel($id: ID!) {
+    getRcUserGroupHotel(id: $id) {
+      id
+      hotelMasterId
+      name
+      createdAt
+      updatedAt
+      deletedAt
+    }
+  }
+`;
+export const listRcUserGroupHotels = /* GraphQL */ `
+  query ListRcUserGroupHotels(
+    $filter: ModelRcUserGroupHotelFilterInput
+    $limit: Int
+    $nextToken: String
+  ) {
+    listRcUserGroupHotels(
+      filter: $filter
+      limit: $limit
+      nextToken: $nextToken
+    ) {
+      items {
+        id
+        hotelMasterId
+        name
+        createdAt
+        updatedAt
+        deletedAt
+      }
+      nextToken
+    }
+  }
+`;
+export const rcUserGroupHotelByHotelMasterId = /* GraphQL */ `
+  query RcUserGroupHotelByHotelMasterId(
+    $hotelMasterId: ID
+    $sortDirection: ModelSortDirection
+    $filter: ModelRcUserGroupHotelFilterInput
+    $limit: Int
+    $nextToken: String
+  ) {
+    RcUserGroupHotelByHotelMasterId(
+      hotelMasterId: $hotelMasterId
+      sortDirection: $sortDirection
+      filter: $filter
+      limit: $limit
+      nextToken: $nextToken
+    ) {
+      items {
+        id
+        hotelMasterId
+        name
+        createdAt
+        updatedAt
+        deletedAt
+      }
+      nextToken
+    }
+  }
+`;
